@@ -1,7 +1,7 @@
 document.getElementById("btn-set").addEventListener(
     "click", 
     function() {
-        document.getElementById("titulo").setAttribute("class", "red") //passa como parametro o atributo e qual atributo
+        document.getElementById("titulo").setAttribute("class", "red") //passa como parametro o atributo e o nome do atributo
 })
 
 document.getElementById("btn-remove").addEventListener(
