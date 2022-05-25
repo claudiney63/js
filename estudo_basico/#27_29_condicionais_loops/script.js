@@ -40,11 +40,27 @@ let paises = document.getElementsByClassName('pais')
     console.log(paises[i].innerHTML)
 }*/
 
-let i = 0
+/*let i = 0
 
 while(i < paises.length) {
     console.log(paises[i].innerHTML)
     i++
-}
+}*/
 
 //também existe o do while
+
+let fruta = {
+    nome: "Banana",
+    preco: 1.99,
+    unidade: 1
+}
+
+let carros = ["Mercedes", "Camaro", "Toro"]
+
+for(let i in fruta) {
+    console.log(fruta[i])
+}
+
+for(let j of carros) {
+    console.log(j)
+} 
