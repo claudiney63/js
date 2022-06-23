@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 2</title>
+</head>
+<body>
+
+    <h1>Aula 2 - Eventos</h1>
+    <button id="btn1">Botão 1</button>
+    <button id="btn2" onclick="alert('hello world')">Botão 2</button>
+
+    <p>Onclick não chamamos mais de uma função</p>
+
+    <script>
+
+        var btn1 = document.getElementById("btn1")
+
+        btn1.addEventListener("click", () => alert("Clicou"))
+
+    </script>
+    
+</body>
+</html>

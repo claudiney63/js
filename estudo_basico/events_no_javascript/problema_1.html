@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        <label for="txtUser">User</label>
+        <input type="text" id="txtUser" name="user"> <br>
+        <label for="txtPass">Password</label>
+        <input type="password" id="txtPass" name="pass"> <br>
+        <button id="btnSubmit">Enviar</button>
+    </form>
+
+    <script>
+        var user = document.getElementById('txtUser')
+        var pass = document.getElementById('txtPass')
+        var btn = document.getElementById('btnSubmit')
+
+        btn.addEventListener('click', function() {
+            if(!user.value || !pass.value) {
+                alert('Preencha todos os campos')
+            } else {
+                alert('Login efetuado com sucesso')
+            }
+        })
+    </script>
+
+</body>
+</html>
