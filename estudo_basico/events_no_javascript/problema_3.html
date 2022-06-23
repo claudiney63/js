@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <textarea name="txt" id="txtArea" cols="30" rows="10"></textarea>
+
+    <script>
+        var txtArea = document.getElementById('txtArea')
+
+        txtArea.addEventListener('keyup', () => console.log("keyup " + this.value))
+        txtArea.addEventListener('keydown', () => console.log("keydown " + this.value))
+        txtArea.addEventListener('keypress', () => console.log("keypress " + this.value))
+    </script>
+
+</body>
+</html>
